@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <title>jsPDF</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
     <h1>Hola Mundo con jsPDF</h1>
 
-    <input type="text" id="title" placeholder="Invoice Title">
-    <textarea id="content" placeholder="Enter invoice details"></textarea>
-    <button onclick="generatePDF()">Generate PDF</button>
+    <input type="text" id="title" placeholder="Título de la factura">
+    <textarea id="content" placeholder="Escriba los detalles de la factura"></textarea>
+    <button class="btn btn-primary" onclick="generatePDF()">Generar PDF</button>
 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
     <script src="main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </body>

@@ -9,7 +9,13 @@ function generatePDF() {
   const content = document.getElementById("content").value;
 
   if (!title.trim() && !content.trim()) {
-    alert("Please enter valid content before generating the PDF.");
+
+    Swal.fire({
+      title: "jsPDF",
+      text: "Escriba el título y el contenido de la factura antes de generar el PDF.",
+      icon: "error",
+    });
+
     return;
   }
 
